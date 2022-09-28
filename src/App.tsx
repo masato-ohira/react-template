@@ -1,11 +1,15 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { css } from '@emotion/react'
 
-function App() {
+const App = () => {
   const [count, setCount] = useState(0)
-
+  const styles = {
+    container: css`
+      padding: 20px;
+    `,
+  }
   return (
-    <div className='container'>
+    <div className='container' css={styles.container}>
       <div className='button'>OK</div>
     </div>
   )
